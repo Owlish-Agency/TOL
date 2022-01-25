@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'maz-ui/lib/css/base';
+@import '~/assets/css/maz-ui-overrides';
+@import 'tailwindcss/utilities';
+
+/* Add any global styles to the base tailwind styles */
+@layer base {
+    .maz-input {
+        &.maz-border {
+            @apply border-0;
+        }
+    }
+}
+
+/* Add additional utility classes here */
+@layer utilities {
+    .btn-outline {
+        @apply bg-dark-blue
+    }
+    .container {
+        @apply px-8 w-full mx-auto;
+        @screen xl {
+            max-width: 1280px;
+            @apply px-8;
+        }
+    }
+    .page-height {
+        height: calc(100% - 75px);
+    }
+    .page-height-form {
+        height: calc(100% - 150px);
+    }
+    .h-screen-fix {
+        height: 100vh;
+        height: calc(100vh - var(--vh-offset, 0px));
+    }
+    .btn {
+        @apply font-default text-center font-bold tracking-widest text-sm text-brown uppercase px-8 py-4 inline-block transition-shadow duration-150 ease-in-out;
+        background: linear-gradient(90deg, #DEBF8D 0%, #FFE6AB 35.93%, #DEBF8D 68.49%, #D3A87E 100%, #DFCA92 100%);
+    }
+    .btn:hover {
+        box-shadow: 0 0 40px 10px rgba(223, 217, 163, 0.78); 
+    }
+    @variants responsive {
+        /* Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    }
+}
