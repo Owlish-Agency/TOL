@@ -15,6 +15,8 @@ const fetch = require('node-fetch')
 
 // eslint-disable-next-line no-unused-vars
 const handler = async event => {
+    console.log('can you see me')
+
     const params = JSON.parse(event.body)
 
     let uri = process.env.WUFOO_GET_LIGHT_ENTRIES
@@ -25,7 +27,7 @@ const handler = async event => {
     }
 
     const username = process.env.WUFOO_USERNAME
-    const password = 'wufoohoopla'
+    const password = process.env.WUFOO_PASSWORD
 
     let headers = {
         Authorization: 'Basic ' + base64.encode(username + ':' + password),
