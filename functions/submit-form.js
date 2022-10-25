@@ -188,6 +188,13 @@ exports.handler = async event => {
         let dataDecoded = null
         try {
             dataDecoded = await response.json()
+            emailClient.sendEmail({
+                From: process.env.EMAIL_ERRORS_FROM,
+                To: process.env.EMAIL_ERRORS_TO,
+                Subject: `Congratulations! Your shareable link is inside`,
+                TextBody: `http://localhost:8888/view-donations`,
+                MessageStream: 'outbound',
+            })
         } catch (e) {
             dataDecoded = await response.text()
         }

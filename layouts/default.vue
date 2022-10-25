@@ -135,7 +135,7 @@ export default {
         pageTitle() {
             let pageTitle = ''
             if (this.$route.name === 'sponsorships-become-a-sponsor') {
-                pageTitle = 'Become a sponsor form'
+                pageTitle = 'Support The Patient Care Fund'
             } else {
                 pageTitle = 'Gift a light form'
             }
