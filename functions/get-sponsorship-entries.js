@@ -49,7 +49,7 @@ const handler = async event => {
             statusCode: 200,
             body: JSON.stringify({
                 statusCode: 200,
-                entries: data.Entries
+                entries: data.Entries,
             }),
         }
     } catch (error) {
