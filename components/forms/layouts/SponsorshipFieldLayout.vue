@@ -48,10 +48,7 @@ export default {
                     invertedIcon:
                         '/sponsorship/sponsorship-tree-star-topper-inverted.svg',
                     includes: [
-                        'Stage Recognition',
-                        'One reserved table and 10 Gala tickets',
-                        'Name/Logo on Gala event signage',
-                        'Name/Logo recognition on the webpage as a Star Tree Topper Sponsor',
+                        'The value of this donation provides 58 days of patient care, 50 children to experience Camp Conquer for one week, or pet care and food for 16 patients’ pets through the Pet Peace of Mind Program',
                     ],
                 },
                 {
@@ -61,10 +58,7 @@ export default {
                     invertedIcon:
                         '/sponsorship/sponsorship-angels-trumpet-inverted.svg',
                     includes: [
-                        'Stage Recognition',
-                        'One reserved table and 6 Gala tickets',
-                        'Name/Logo on Gala event signage',
-                        'Name/Logo recognition on the webpage as an Angel’s Trumpet Sponsor',
+                        'The value of this donation provides 20 days of patient care, 25 children to experience Camp Conquer for one week, or pet care and food for 8 patients’ pets through the Pet Peace of Mind Program',
                     ],
                 },
                 {
@@ -74,9 +68,7 @@ export default {
                     invertedIcon:
                         '/sponsorship/sponsorship-blessing-bells-inverted.svg',
                     includes: [
-                        '4 Gala tickets',
-                        'Name/Logo on Gala event signage',
-                        'Name/Logo recognition on the webpage as a Blessing Bells Sponsor',
+                        'The value of this donation provides 17 days of patient care, 15 children to experience Camp Conquer for one week, or pet care and food for 5 patients’ pets through the Pet Peace of Mind Program',
                     ],
                 },
                 {
@@ -86,8 +78,7 @@ export default {
                     invertedIcon:
                         '/sponsorship/sponsorship-candlelight-inverted.svg',
                     includes: [
-                        '2 Gala tickets',
-                        'Name/Logo recognition on the webpage as a Candlelight Sponsor',
+                        'The value of this donation provides 5 days of patient care, 5 children to experience Camp Conquer for one week, or pet care and food for 2 patients’ pets through the Pet Peace of Mind Program',
                     ],
                 },
                 {
@@ -97,7 +88,7 @@ export default {
                     invertedIcon:
                         '/sponsorship/sponsorship-holiday-ornament-inverted.svg',
                     includes: [
-                        'Name/Logo recognition on webpage as a Holiday Ornament Sponsor',
+                        'The value of this donation provides 2 days of patient care, 2-3 children to experience Camp Conquer for one week, or pet care and food for 1 patient’s pets through the Pet Peace of Mind Program',
                     ],
                 },
             ],

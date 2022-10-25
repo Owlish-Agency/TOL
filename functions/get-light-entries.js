@@ -15,8 +15,6 @@ const fetch = require('node-fetch')
 
 // eslint-disable-next-line no-unused-vars
 const handler = async event => {
-    console.log('can you see me')
-
     const params = JSON.parse(event.body)
 
     let uri = process.env.WUFOO_GET_LIGHT_ENTRIES
@@ -48,7 +46,7 @@ const handler = async event => {
         }
         const data = await response.json()
         console.log('Response OK')
-
+        console.log(data)
         // Create new array for individual lights
         let lightsArray = new Array()
         data.Entries.forEach(entry => {
