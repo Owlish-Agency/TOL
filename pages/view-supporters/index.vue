@@ -22,28 +22,22 @@
                             <p
                                 class="w-full md:px-4 text-center mb-4 sm:mb-6 text-gold text-lg sm:text-xl md:text-2xl"
                             >
-                                2021 SPONSORS
+                                2022 SPONSORS
                             </p>
                             <p
                                 class="w-full md:w-3/5 md:px-4 text-center mb-8 sm:mb-12 text-snow text-base sm:text-lg"
                             >
-                                We would like to thank our generous sponsors who
-                                make it possible for us to further our mission
-                                as the first and only non-profit hospice
-                                provider in the city.
-                            </p>
-                            <p class="w-full md:w-3/5 md:px-4 text-center">
-                                <nuxt-link
-                                    class="btn mb-12"
-                                    to="/sponsorships/become-a-sponsor"
-                                    >Become a sponsor</nuxt-link
-                                >
+                                “Join us in thanking these very generous
+                                supporters who have donated to our Patient Care
+                                Fund. The Patient Care Fund is able to further
+                                our mission to ensure all individuals seeking
+                                end of life care have the care they deserve.”
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <SponsorSlider :sponsors="sponsors" class="w-full" />
+            <SponsorList :sponsors="sponsors" class="w-full" />
         </div>
     </div>
 </template>
@@ -52,8 +46,7 @@
 export default {
     name: 'SponsorshipPage',
     components: {
-        SponsorSlider: () =>
-            import('@/components/sponsorships/SponsorSlider.vue'),
+        SponsorList: () => import('@/components/sponsorships/SponsorList.vue'),
     },
     // Fetches the forms fields for us to output how we want
     async asyncData({ $axios, $config }) {
