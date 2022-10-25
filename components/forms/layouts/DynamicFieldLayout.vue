@@ -89,7 +89,7 @@ export default {
             fieldButtons: [
                 {
                     id: 'addLight',
-                    label: 'Add a Light ($30)',
+                    label: 'Add a Light ($30.00)',
                 },
                 {
                     id: 'addCustomDonation',

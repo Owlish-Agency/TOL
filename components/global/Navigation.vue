@@ -69,17 +69,22 @@ export default {
                 {
                     label: 'Gift A Light',
                     slug: '/gift-a-light',
-                    id: 'gift-a-light',
-                },
-                {
-                    label: 'Sponsorships',
-                    slug: '/sponsorships',
-                    id: 'sponsorships',
+                    id: 'gift-a-lights',
                 },
                 {
                     label: 'View Lights',
                     slug: '/view-donations',
                     id: 'view-donations',
+                },
+                {
+                    label: 'Support Patient Care Fund',
+                    slug: '/sponsorships/become-a-sponsor',
+                    id: 'sponsorships/become-a-sponsor',
+                },
+                {
+                    label: 'View Supporters',
+                    slug: '/view-supporters',
+                    id: 'view-supporters',
                 },
             ]
         },

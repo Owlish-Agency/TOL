@@ -25,7 +25,7 @@ const handler = async event => {
     }
 
     const username = process.env.WUFOO_USERNAME
-    const password = 'wufoohoopla'
+    const password = process.env.WUFOO_PASSWORD
 
     let headers = {
         Authorization: 'Basic ' + base64.encode(username + ':' + password),
@@ -46,7 +46,7 @@ const handler = async event => {
         }
         const data = await response.json()
         console.log('Response OK')
-
+        console.log(data)
         // Create new array for individual lights
         let lightsArray = new Array()
         data.Entries.forEach(entry => {
