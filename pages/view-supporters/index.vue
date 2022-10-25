@@ -27,11 +27,11 @@
                             <p
                                 class="w-full md:w-3/5 md:px-4 text-center mb-8 sm:mb-12 text-snow text-base sm:text-lg"
                             >
-                                “Join us in thanking these very generous
+                                Join us in thanking these very generous
                                 supporters who have donated to our Patient Care
                                 Fund. The Patient Care Fund is able to further
                                 our mission to ensure all individuals seeking
-                                end of life care have the care they deserve.”
+                                end of life care have the care they deserve.
                             </p>
                         </div>
                     </div>
