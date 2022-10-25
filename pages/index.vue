@@ -17,7 +17,7 @@
                             <p
                                 class="w-full md:px-4 text-center mb-4 text-white font-heading text-xl md:text-2xl"
                             >
-                                ANNUAL HOLIDAY GALA
+                                ANNUAL HOLIDAY FUNDRAISER
                             </p>
                             <img
                                 class="w-full md:w-3/4 lg:w-1/2 xl:w-3/5 md:px-4 mb-8 md:mb-12"
@@ -42,9 +42,13 @@
                                     <nuxt-link
                                         class="btn w-full md:w-auto mb-6"
                                         to="/sponsorships"
-                                        >Sponsorships</nuxt-link
+                                        >Support Patient Care Fund</nuxt-link
                                     >
                                 </li>
+                            </ul>
+                            <ul
+                                class="w-full md:w-3/4 lg:w-full md:px-4 md:-mx-4 text-center"
+                            >
                                 <li
                                     class="block w-full md:w-auto md:inline-block md:px-4"
                                 >
@@ -54,16 +58,15 @@
                                         >View Lights</nuxt-link
                                     >
                                 </li>
-                                <!-- <li
+                                <li
                                     class="block w-full md:w-auto md:inline-block md:px-4"
                                 >
-                                    <a
+                                    <nuxt-link
                                         class="btn w-full md:w-auto mb-6"
-                                        href="https://www.eventbrite.com/e/2021-trees-of-light-fundraising-gala-tickets-181213383107"
-                                        target="_blank"
-                                        >Gala Tickets</a
+                                        to="/view-donations"
+                                        >View Supporters</nuxt-link
                                     >
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
