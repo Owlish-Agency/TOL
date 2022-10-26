@@ -24,7 +24,7 @@
                 >
                     <img :src="level.icon" class="flex-0 md:px-2 max-h-20" />
                     <div class="flex-1 px-2">
-                        <p class="text-white">Donation Level:</p>
+                        <p class="text-white">Sponsorship Level:</p>
                         <p class="text-gold">
                             {{ level.label }} ${{ level.value }}
                         </p>
