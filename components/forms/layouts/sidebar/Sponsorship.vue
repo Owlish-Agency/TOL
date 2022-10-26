@@ -11,7 +11,7 @@
                     class="flex-0 md:px-2 max-h-20"
                 />
                 <div class="flex-1 md:px-2">
-                    <p class="text-sm text-white">Sponsorship Level:</p>
+                    <p class="text-sm text-white">Donation Level:</p>
                     <p class="text-sm text-gold">
                         {{ selectedSponsorship[0].level }}
                         ${{ selectedSponsorship[0].price }}

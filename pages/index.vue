@@ -101,7 +101,7 @@ export default {
             isReady: false,
             // Meta Information
             metaPageTitle: 'Trees Of Light | The Hospice of Baton Rouge',
-            metaTitle: "The Hospice of Baton Rouge's Trees Of Light Gala",
+            metaTitle: "The Hospice of Baton Rouge's Trees Of Light Fundraiser",
             metaDescription:
                 'Join us by supporting our annual fundraiser, Trees of Light. Purchase lights, sponsorships, and event tickets to help further the mission of The Hospice of Baton Rouge.',
         }
