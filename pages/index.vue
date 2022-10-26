@@ -41,7 +41,7 @@
                                 >
                                     <nuxt-link
                                         class="btn w-full md:w-auto mb-6"
-                                        to="/sponsorships/become-a-sponsor"
+                                        to="/donors/become-a-donor"
                                         >Support Patient Care Fund</nuxt-link
                                     >
                                 </li>

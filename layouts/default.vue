@@ -110,7 +110,7 @@ export default {
         isFormPage() {
             return (
                 this.$route.path.includes('gift-a-light') ||
-                this.$route.path.includes('become-a-sponsor')
+                this.$route.path.includes('become-a-donor')
             )
         },
         setPageHeight() {
@@ -134,7 +134,7 @@ export default {
         },
         pageTitle() {
             let pageTitle = ''
-            if (this.$route.name === 'sponsorships-become-a-sponsor') {
+            if (this.$route.name === 'donors-become-a-donor') {
                 pageTitle = 'Support The Patient Care Fund'
             } else {
                 pageTitle = 'Gift a light form'

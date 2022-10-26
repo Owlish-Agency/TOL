@@ -190,9 +190,10 @@ exports.handler = async event => {
             dataDecoded = await response.json()
             emailClient.sendEmail({
                 From: process.env.EMAIL_ERRORS_FROM,
-                To: process.env.EMAIL_ERRORS_TO,
-                Subject: `Congratulations! Your shareable link is inside`,
-                TextBody: `http://localhost:8888/view-donations`,
+                To: dataToSubmit.Field10,
+                Subject: `Thank you for your donation!`,
+                TextBody: `Thank you for your donation! You can share the tree on facebook with the following link:
+                https://www.facebook.com/sharer/sharer.php?u=https%3A//hospicetreesoflight.org/view-donations`,
                 MessageStream: 'outbound',
             })
         } catch (e) {

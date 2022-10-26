@@ -22,7 +22,7 @@
                             <p
                                 class="w-full md:px-4 text-center mb-4 sm:mb-6 text-gold text-lg sm:text-xl md:text-2xl"
                             >
-                                2022 SPONSORS
+                                2022 DONORS
                             </p>
                             <p
                                 class="w-full md:w-3/5 md:px-4 text-center mb-8 sm:mb-12 text-snow text-base sm:text-lg"
@@ -46,7 +46,7 @@
 export default {
     name: 'SponsorshipPage',
     components: {
-        SponsorList: () => import('@/components/sponsorships/SponsorList.vue'),
+        SponsorList: () => import('@/components/donors/SponsorList.vue'),
     },
     // Fetches the forms fields for us to output how we want
     async asyncData({ $axios, $config }) {
@@ -75,11 +75,10 @@ export default {
         return {
             // Meta Information
             metaPageTitle:
-                'Sponsorships | Trees Of Light | The Hospice of Baton Rouge',
-            metaTitle:
-                'Sponsorships | Trees Of Light | The Hospice of Baton Rouge',
+                'Donors | Trees Of Light | The Hospice of Baton Rouge',
+            metaTitle: 'Donors | Trees Of Light | The Hospice of Baton Rouge',
             metaDescription:
-                'We would like to thank our generous sponsors who make it possible for us to further our mission as the first and only non-profit hospice provider in the city.',
+                'We would like to thank our generous donors who make it possible for us to further our mission as the first and only non-profit hospice provider in the city.',
             // Page Variables
             sponsors: [],
         }

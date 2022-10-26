@@ -2,6 +2,40 @@
     <p class="text-light-blue text-xs md:text-sm uppercase mb-2">
         Donation Levelzzz
     </p>
+    <div class="card-inner">
+        <div class="flex flex-wrap justify-center content-center h-full px-20">
+            <div
+                class="w-full text-center flex justify-center flex-wrap flex-col"
+            >
+                <img
+                    :src="sponsorshipLevel(sponsor.Field17).invertedIcon"
+                    :alt="sponsorshipLevel(sponsor.Field17).label"
+                    class="w-6 sm:w-auto mx-auto mb-2"
+                />
+                <!-- eslint-disable -->
+                <p
+                    class="text-gold text-xs sm:text-sm md:text-base uppercase mb-1 md:mb-0"
+                    v-html="sponsorshipLevel(sponsor.Field17).label"
+                ></p>
+                <!-- eslint-enable -->
+                <div
+                    class="border-dark-blue border-t-1 w-8 mx-auto mt-2 mb-2 md:my-3 hidden sm:block"
+                ></div>
+                <img
+                    v-if="sponsor.Field124.length"
+                    :src="sponsorImage(sponsor.Field124)"
+                    :alt="sponsor.Field8 + ' ' + sponsor.Field9"
+                    class="sponsor-logos sm:max-w-none mx-auto"
+                />
+                <h3
+                    v-else
+                    class="text-sm sm:text-lg md:text-xl lg:text-lg xl:text-2xl px-6 md:px-16"
+                >
+                    {{ sponsor.Field8 }} {{ sponsor.Field9 }}
+                </h3>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

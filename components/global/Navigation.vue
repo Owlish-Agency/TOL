@@ -78,8 +78,8 @@ export default {
                 },
                 {
                     label: 'Support Patient Care Fund',
-                    slug: '/sponsorships/become-a-sponsor',
-                    id: 'sponsorships/become-a-sponsor',
+                    slug: '/donors/become-a-donor',
+                    id: 'donors/become-a-donor',
                 },
                 {
                     label: 'View Supporters',

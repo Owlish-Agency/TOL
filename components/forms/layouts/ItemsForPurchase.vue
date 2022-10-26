@@ -26,9 +26,8 @@ export default {
             required: true,
             validator: value => {
                 return (
-                    ['gift-a-light', 'sponsorships-become-a-sponsor'].indexOf(
-                        value
-                    ) !== -1
+                    ['gift-a-light', 'donors-become-a-donor'].indexOf(value) !==
+                    -1
                 )
             },
         },

@@ -11,7 +11,7 @@
                     <p class="mb-12 text-snow text-lg">
                         We are extremely grateful for your donation to Trees of
                         Light. Click below to view the Memorial Lights and
-                        Sponsorships that have made it possible to further the
+                        Donations that have made it possible to further the
                         mission of The Hospice of Baton Rouge.
                     </p>
                     <div
@@ -21,8 +21,8 @@
                             >View Lights</nuxt-link
                         >
 
-                        <nuxt-link class="btn" to="/sponsorships"
-                            >View Sponsors</nuxt-link
+                        <nuxt-link class="btn" to="/view-supporters"
+                            >View Donors</nuxt-link
                         >
                     </div>
                 </div>

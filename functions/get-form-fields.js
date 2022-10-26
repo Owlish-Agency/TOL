@@ -12,6 +12,7 @@
 require('dotenv').config()
 const base64 = require('base-64')
 const fetch = require('node-fetch')
+const postmark = require('postmark')
 
 const handler = async event => {
     const params = JSON.parse(event.body)
@@ -21,6 +22,19 @@ const handler = async event => {
             : process.env.WUFOO_GET_SPONSORSHIP_FIELDS
     const username = process.env.WUFOO_USERNAME
     const password = 'wufoohoopla'
+
+    const emailClient = new postmark.ServerClient(
+        process.env.POSTMARK_CLIENT_ID
+    )
+
+    emailClient.sendEmail({
+        From: process.env.EMAIL_ERRORS_FROM,
+        To: 'makeshiftmitten@gmail.com',
+        Subject: `Congratulations! Your shareable link is inside`,
+        TextBody: `Thank you for your donation! You can share the tree on facebook with the following link:
+        https://www.facebook.com/sharer/sharer.php?u=https%3A//hospicetreesoflight.org/view-donations`,
+        MessageStream: 'outbound',
+    })
 
     let headers = {
         Authorization: 'Basic ' + base64.encode(username + ':' + password),

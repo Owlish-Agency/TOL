@@ -96,7 +96,7 @@ export default {
             } else {
                 steps = [
                     {
-                        label: 'Sponsorship',
+                        label: 'Donation',
                         active: this.activeStep >= 1 ? true : false,
                     },
                     {
