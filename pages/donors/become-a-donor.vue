@@ -49,7 +49,7 @@ export default {
             metaTitle:
                 'Become a Donor | Trees Of Light | The Hospice of Baton Rouge',
             metaDescription:
-                'Support our mission by becoming a proud donor to our Trees of Light Gala. Proceeds directly benefit the Patient Care Fund.',
+                'Support our mission by becoming a proud donor to our Trees of Light Fundraiser. Proceeds directly benefit the Patient Care Fund.',
             // Page Variables
             introText:
                 'We hope you will support The Hospice of Baton Rouge and our mission by choosing to become one of our proud donors. Your donation will provide much needed care to people in our community.',

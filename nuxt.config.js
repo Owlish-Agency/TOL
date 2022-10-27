@@ -9,7 +9,7 @@ module.exports = {
      ** Headers of the page
      */
     head: {
-        title: "The Hospice of Baton Rouge's Trees Of Light Gala",
+        title: "The Hospice of Baton Rouge's Trees Of Light Fundraiser",
         meta: [
             { charset: 'utf-8' },
             {
