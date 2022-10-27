@@ -190,10 +190,22 @@ exports.handler = async event => {
             dataDecoded = await response.json()
             emailClient.sendEmail({
                 From: process.env.EMAIL_ERRORS_FROM,
-                To: dataToSubmit.Field10,
+
                 Subject: `Thank you for your donation!`,
                 TextBody: `Thank you for your donation! You can share the tree on facebook with the following link:
                 https://www.facebook.com/sharer/sharer.php?u=https%3A//hospicetreesoflight.org/view-donations`,
+                MessageStream: 'outbound',
+            })
+
+            let isLight = params.formName == 'gift-light-form'
+
+            emailClient.sendEmailWithTemplate({
+                TemplateModel: {
+                    donor: isLight ? dataToSubmit.Field1 : dataToSubmit.Field8,
+                },
+                TemplateAlias: 'code-your-own-1',
+                From: process.env.EMAIL_ERRORS_FROM,
+                To: isLight ? dataToSubmit.Field4 : dataToSubmit.Field10,
                 MessageStream: 'outbound',
             })
         } catch (e) {

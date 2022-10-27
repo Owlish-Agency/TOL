@@ -27,15 +27,6 @@ const handler = async event => {
         process.env.POSTMARK_CLIENT_ID
     )
 
-    emailClient.sendEmail({
-        From: process.env.EMAIL_ERRORS_FROM,
-        To: 'makeshiftmitten@gmail.com',
-        Subject: `Congratulations! Your shareable link is inside`,
-        TextBody: `Thank you for your donation! You can share the tree on facebook with the following link:
-        https://www.facebook.com/sharer/sharer.php?u=https%3A//hospicetreesoflight.org/view-donations`,
-        MessageStream: 'outbound',
-    })
-
     let headers = {
         Authorization: 'Basic ' + base64.encode(username + ':' + password),
     }
