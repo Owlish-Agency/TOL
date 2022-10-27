@@ -188,17 +188,17 @@ exports.handler = async event => {
         let dataDecoded = null
         try {
             dataDecoded = await response.json()
-            let isLight = params.formName == 'gift-light-form'
+            // let isLight = params.formName == 'gift-light-form'
 
-            emailClient.sendEmailWithTemplate({
-                TemplateModel: {
-                    donor: isLight ? dataToSubmit.Field1 : dataToSubmit.Field8,
-                },
-                TemplateAlias: 'code-your-own-1',
-                From: process.env.EMAIL_ERRORS_FROM,
-                To: isLight ? dataToSubmit.Field4 : dataToSubmit.Field10,
-                MessageStream: 'outbound',
-            })
+            // emailClient.sendEmailWithTemplate({
+            //     TemplateModel: {
+            //         donor: isLight ? dataToSubmit.Field1 : dataToSubmit.Field8,
+            //     },
+            //     TemplateAlias: 'code-your-own-1',
+            //     From: process.env.EMAIL_ERRORS_FROM,
+            //     To: isLight ? dataToSubmit.Field4 : dataToSubmit.Field10,
+            //     MessageStream: 'outbound',
+            // })
         } catch (e) {
             dataDecoded = await response.text()
         }
