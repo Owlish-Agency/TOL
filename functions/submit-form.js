@@ -188,15 +188,6 @@ exports.handler = async event => {
         let dataDecoded = null
         try {
             dataDecoded = await response.json()
-            emailClient.sendEmail({
-                From: process.env.EMAIL_ERRORS_FROM,
-
-                Subject: `Thank you for your donation!`,
-                TextBody: `Thank you for your donation! You can share the tree on facebook with the following link:
-                https://www.facebook.com/sharer/sharer.php?u=https%3A//hospicetreesoflight.org/view-donations`,
-                MessageStream: 'outbound',
-            })
-
             let isLight = params.formName == 'gift-light-form'
 
             emailClient.sendEmailWithTemplate({
