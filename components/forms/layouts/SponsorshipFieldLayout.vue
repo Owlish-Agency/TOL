@@ -43,7 +43,7 @@ export default {
             sponsorshipLevels: [
                 {
                     label: 'Star Tree Topper',
-                    value: '10,000.00',
+                    value: '1.00',
                     icon: '/sponsorship/sponsorship-tree-star-topper.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-tree-star-topper-inverted.svg',
@@ -53,7 +53,7 @@ export default {
                 },
                 {
                     label: "Angel's Trumpet",
-                    value: '5,000.00',
+                    value: '1.00',
                     icon: '/sponsorship/sponsorship-angels-trumpet.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-angels-trumpet-inverted.svg',
@@ -63,7 +63,7 @@ export default {
                 },
                 {
                     label: 'Blessing Bells',
-                    value: '3,000.00',
+                    value: '1.00',
                     icon: '/sponsorship/sponsorship-blessing-bells.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-blessing-bells-inverted.svg',
@@ -73,7 +73,7 @@ export default {
                 },
                 {
                     label: 'Candlelight',
-                    value: '1,000.00',
+                    value: '1.00',
                     icon: '/sponsorship/sponsorship-candlelight.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-candlelight-inverted.svg',
@@ -83,7 +83,7 @@ export default {
                 },
                 {
                     label: 'Holiday Ornament',
-                    value: '500.00',
+                    value: '1.00',
                     icon: '/sponsorship/sponsorship-holiday-ornament.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-holiday-ornament-inverted.svg',
