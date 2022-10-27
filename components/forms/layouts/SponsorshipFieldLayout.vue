@@ -43,7 +43,7 @@ export default {
             sponsorshipLevels: [
                 {
                     label: 'Star Tree Topper',
-                    value: '1.00',
+                    value: '10,000.00',
                     icon: '/sponsorship/sponsorship-tree-star-topper.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-tree-star-topper-inverted.svg',
