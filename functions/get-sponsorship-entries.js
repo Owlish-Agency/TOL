@@ -14,6 +14,7 @@ const base64 = require('base-64')
 const fetch = require('node-fetch')
 
 const handler = async event => {
+    console.log('booting function')
     const params = JSON.parse(event.body)
     const uri =
         params.formName == 'sponsorship-entries'
