@@ -11,8 +11,8 @@
                     class="flex-0 md:px-2 max-h-20"
                 />
                 <div class="flex-1 md:px-2">
-                    <p class="text-sm text-white">Donor Level:</p>
-                    <p class="text-sm text-gold">
+                    <p class="text-white">Donor Level:</p>
+                    <p class="text-gold">
                         {{ selectedSponsorship[0].level }}
                         ${{ selectedSponsorship[0].price }}
                     </p>
@@ -23,7 +23,7 @@
                     </span>
                     <ul
                         v-if="selectedSponsorship[0].includes"
-                        class="text-sm list-disc pl-6"
+                        class="list-disc pl-6"
                     >
                         <li
                             v-for="(item, index) in selectedSponsorship[0]

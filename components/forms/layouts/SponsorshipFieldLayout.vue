@@ -127,10 +127,3 @@ export default {
     },
 }
 </script>
-<style lang="scss">
-.sponsorship-level {
-    p {
-        @apply text-sm;
-    }
-}
-</style>
