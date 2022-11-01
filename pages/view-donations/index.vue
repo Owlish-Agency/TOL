@@ -169,7 +169,6 @@ export default {
     methods: {
         async fetchLights(afterEntryAmount) {
             let result = null
-            console.log('requesting light entries')
             try {
                 result = await this.$axios.$post(
                     `${this.$config.baseURL}${this.$config.netlifyGetLightEntries}`,

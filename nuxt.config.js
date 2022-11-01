@@ -82,6 +82,7 @@ module.exports = {
         { src: '~/plugins/flickity', ssr: false },
         { src: '~/plugins/page-transition', ssr: false },
     ],
+    ssr: false,
     /*
      ** Nuxt.js dev-modules
      */
