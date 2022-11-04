@@ -1,10 +1,5 @@
 <template>
-    <div
-        class="h-full"
-        :class="{
-            'pt-24 pb-32': sponsors.length > 0,
-        }"
-    >
+    <div class="h-full" style="padding-top: 5rem">
         <div class="flex flex-wrap content-center h-full">
             <div class="w-full intro container">
                 <div
