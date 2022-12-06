@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full" style="padding-top: 5rem">
+    <div class="h-full" style="padding-top: 5rem; padding-bottom: 8rem">
         <div class="flex flex-wrap content-center h-full">
             <div class="w-full intro container">
                 <div
