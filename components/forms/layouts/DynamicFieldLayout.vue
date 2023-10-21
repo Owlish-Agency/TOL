@@ -178,6 +178,9 @@ export default {
                 this.addLightField()
             } else {
                 if (!this.donationFieldActive) {
+                    if (this.activeDynamicFields.length == 0) {
+                        this.addLightField()
+                    }
                     this.addDonationFieldMethod()
                 }
             }
