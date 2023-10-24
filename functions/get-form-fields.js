@@ -62,7 +62,7 @@ const handler = async event => {
                 obj.ID !== 'Field597' && // Custom donation field
                 obj.ID !== 'Field13' && // Sponsorship donation field
                 obj.ID !== 'Field20' && // Sponsorship donation total
-                obj.ID !== 'Field124' && // Sponsorship File Upload field
+                //obj.ID !== 'Field124' && // Sponsorship File Upload field
                 obj.ID !== 'Field624' && // Custom donation field
                 obj.ID !== 'UpdatedBy'
             )
@@ -86,7 +86,7 @@ const handler = async event => {
 
         // Group data by pages
         let groupedData = orderByPages(fields)
-
+        console.log(JSON.stringify(groupedData))
         return {
             statusCode: 200,
             body: JSON.stringify({
@@ -104,7 +104,7 @@ const handler = async event => {
     }
 
     function orderByPages(data) {
-        console.log('ordering data')
+        console.log('ordering dataa')
         let ordered = data.reduce(function(r, a) {
             r[a.Page] = r[a.Page] || []
             r[a.Page].push(a)

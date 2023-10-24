@@ -31,7 +31,7 @@ export default {
         if (result.priceFields) {
             store.dispatch('SET_PRICE_FIELDS', result.priceFields)
         }
-
+        console.log(result.fields)
         return result.statusCode != 200
             ? {
                   error: `Status code ${result.statusCode}: ${result.body}`,

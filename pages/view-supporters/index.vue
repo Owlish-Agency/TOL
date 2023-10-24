@@ -1,5 +1,10 @@
 <template>
-    <div class="h-full" style="padding-top: 5rem; padding-bottom: 8rem">
+    <div
+        class="h-full"
+        :class="{
+            'pt-24 pb-32': sponsors.length > 0,
+        }"
+    >
         <div class="flex flex-wrap content-center h-full">
             <div class="w-full intro container">
                 <div
@@ -17,7 +22,7 @@
                             <p
                                 class="w-full md:px-4 text-center mb-4 sm:mb-6 text-gold text-lg sm:text-xl md:text-2xl"
                             >
-                                2023 DONORS
+                                2023 SPONSORS
                             </p>
                             <p
                                 class="w-full md:w-3/5 md:px-4 text-center mb-8 sm:mb-12 text-snow text-base sm:text-lg"
@@ -28,11 +33,18 @@
                                 our mission to ensure all individuals seeking
                                 end of life care have the care they deserve.
                             </p>
+                            <p class="w-full md:w-3/5 md:px-4 text-center">
+                                <nuxt-link
+                                    class="btn mb-12"
+                                    to="/sponsorships/become-a-sponsor"
+                                    >Become a sponsor</nuxt-link
+                                >
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <SponsorList :sponsors="sponsors" class="w-full" />
+            <SponsorSlider :sponsors="sponsors" class="w-full" />
         </div>
     </div>
 </template>
@@ -41,7 +53,7 @@
 export default {
     name: 'SponsorshipPage',
     components: {
-        SponsorList: () => import('@/components/donors/SponsorList.vue'),
+        SponsorSlider: () => import('@/components/donors/SponsorSlider.vue'),
     },
     // Fetches the forms fields for us to output how we want
     async asyncData({ $axios, $config }) {
@@ -70,10 +82,11 @@ export default {
         return {
             // Meta Information
             metaPageTitle:
-                'Donors | Trees Of Light | The Hospice of Baton Rouge',
-            metaTitle: 'Donors | Trees Of Light | The Hospice of Baton Rouge',
+                'Sponsorships | Trees Of Light | The Hospice of Baton Rouge',
+            metaTitle:
+                'Sponsorships | Trees Of Light | The Hospice of Baton Rouge',
             metaDescription:
-                'We would like to thank our generous donors who make it possible for us to further our mission as the first and only non-profit hospice provider in the city.',
+                'We would like to thank our generous sponsors who make it possible for us to further our mission as the first and only non-profit hospice provider in the city.',
             // Page Variables
             sponsors: [],
         }

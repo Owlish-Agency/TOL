@@ -45,7 +45,7 @@ const handler = async event => {
 
         // Group data by pages
         //let groupedData = orderByPages(fields)
-
+        console.log(data.Entries)
         return {
             statusCode: 200,
             body: JSON.stringify({
