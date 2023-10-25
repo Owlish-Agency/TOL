@@ -83,7 +83,7 @@ export default {
                 },
                 {
                     label: 'Holiday Ornament',
-                    value: '500.00',
+                    value: '0.05',
                     icon: '/sponsorship/sponsorship-holiday-ornament.svg',
                     invertedIcon:
                         '/sponsorship/sponsorship-holiday-ornament-inverted.svg',
