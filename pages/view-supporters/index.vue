@@ -22,7 +22,7 @@
                             <p
                                 class="w-full md:px-4 text-center mb-4 sm:mb-6 text-gold text-lg sm:text-xl md:text-2xl"
                             >
-                                2023 SPONSORS
+                                2023 DONORS
                             </p>
                             <p
                                 class="w-full md:w-3/5 md:px-4 text-center mb-8 sm:mb-12 text-snow text-base sm:text-lg"
@@ -36,8 +36,8 @@
                             <p class="w-full md:w-3/5 md:px-4 text-center">
                                 <nuxt-link
                                     class="btn mb-12"
-                                    to="/sponsorships/become-a-sponsor"
-                                    >Become a sponsor</nuxt-link
+                                    to="/donors/become-a-donor"
+                                    >Become a donor</nuxt-link
                                 >
                             </p>
                         </div>

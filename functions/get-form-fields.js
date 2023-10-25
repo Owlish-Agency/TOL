@@ -62,7 +62,7 @@ const handler = async event => {
                 obj.ID !== 'Field597' && // Custom donation field
                 obj.ID !== 'Field13' && // Sponsorship donation field
                 obj.ID !== 'Field20' && // Sponsorship donation total
-                //obj.ID !== 'Field124' && // Sponsorship File Upload field
+                obj.ID !== 'Field124' && // Sponsorship File Upload field
                 obj.ID !== 'Field624' && // Custom donation field
                 obj.ID !== 'UpdatedBy'
             )
