@@ -2,7 +2,7 @@
     <div class="flex flex-wrap w-full">
         <MazInput
             v-model="value"
-            :placeholder="field.Title"
+            :placeholder="buildPlaceholder(value, field.Title)"
             :required="field.IsRequired == '1'"
             :error="field.hasError"
             class="w-full"
@@ -45,6 +45,10 @@ export default {
     methods: {
         resetField() {
             this.$root.$emit('resetFields', this.field.ID)
+        },
+        buildPlaceholder(value, placeholder) {
+            if (value?.length > 0) return placeholder.substring(0, 30) + '...'
+            return placeholder
         },
     },
 }
