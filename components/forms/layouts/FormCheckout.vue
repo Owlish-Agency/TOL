@@ -59,7 +59,7 @@ export default {
     },
     computed: {
         totalPrice() {
-            return 1
+            return this.$store.state.totalPrice.replace(/,/g, '')
         },
         priceData() {
             return this.$store.state.priceData
