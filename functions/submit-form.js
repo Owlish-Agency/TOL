@@ -75,7 +75,7 @@ exports.handler = async event => {
     const dataToSubmit = params.dataToSubmit
     const itemsForPurchase = params.itemsForPurchase
     const paymentDetails = params.paymentDetails
-    const lightsPrice = 1
+    const lightsPrice = 30
     let totalDonationAmount = 0
 
     if (params.formName == 'gift-light-form') {
