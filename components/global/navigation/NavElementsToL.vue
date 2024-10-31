@@ -23,7 +23,7 @@
                 <a
                     :href="link.slug"
                     target="_blank"
-                    class="uppercase text-muted-dark font-bold tracking-widest block text-base md:text-semi-s lg:text-base mt-1"
+                    class="text-muted-dark font-bold tracking-widest block text-base md:text-semi-s lg:text-base mt-1"
                     :class="{ 'glow mt-0': $route.name == link.id }"
                     >{{ link.label }}</a
                 >

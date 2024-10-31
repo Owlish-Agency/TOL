@@ -206,7 +206,7 @@ export default {
 
 <style scoped>
 .hamburger-button {
-    background-color: #ffffff; /* White background for hamburger button */ /* Dark text color */
+    background-color: #e5e7eb; /* Light gray color equivalent to Tailwind's bg-gray-200 */ /* White background for hamburger button */ /* Dark text color */
 }
 
 .nav-header {

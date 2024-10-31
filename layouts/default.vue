@@ -7,21 +7,31 @@
             'opacity-100': !transitioning,
         }"
     >
-        <NavigationToL
-            v-if="showNavigation"
-            :is-form-page="isFormPage"
-            @mobileNavClosed="removeShade"
-            @mobileNavOpen="addShade"
-        />
         <nav
-            v-if="isFormPage"
-            class="flex md:justify-center items-center px-8 border-b border-muted-blue w-full z-1 min-max-h-header"
+            class="flex flex-wrap justify-center items-center px-8 border-b border-muted-blue w-full z-1 min-max-h-header"
         >
-            <h1
-                class="uppercase text-sm md:text-lg text-gold font-medium tracking-widest"
+            <NavigationToL
+                v-if="showNavigation"
+                :is-form-page="isFormPage"
+                @mobileNavClosed="removeShade"
+                @mobileNavOpen="addShade"
+            />
+            <a
+                href="https://hospicebr.org/"
+                target="_blank"
+                class="w-full mb-16 md:mb-0 md:w-40 lg:w-48 flex justify-center"
             >
-                {{ pageTitle }}
-            </h1>
+                <img
+                    src="//www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=1923"
+                    alt="Hospice of Baton Rouge Logo"
+                    srcset="
+                        //www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=600 600w,
+                        //www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=900 900w
+                    "
+                    sizes="(max-width: 768px) 150px, 200px"
+                    class="header__logo-image w-32 md:w-48 lg:w-56 h-auto"
+                />
+            </a>
         </nav>
         <div
             :class="{
@@ -30,27 +40,6 @@
                 'relative h-full overflow-hidden': $route.path == '/',
             }"
         >
-            <div
-                class="absolute right-20 md:right-48 z-20 cursor-pointer"
-                style="top: 13px"
-            >
-                <img
-                    v-if="soundIcon"
-                    v-tooltip.left="{
-                        content: soundIndicator,
-                        show: true,
-                        trigger: 'manual',
-                        classes:
-                            'text-xs md:text-sm tracking-widest uppercase text-white z-10 py-2 px-2 md:px-4 rounded-full',
-                    }"
-                    :src="soundIcon"
-                    alt="music button"
-                    @click="toggleAudio()"
-                />
-                <audio ref="audioPlayer" :src="songs[0]" @ended="songEnded">
-                    Your browser does not support the audio tag.
-                </audio>
-            </div>
             <nuxt />
         </div>
         <div
@@ -234,24 +223,12 @@ main {
         @apply absolute inset-0;
         content: '';
         background-image: url(/img/tol-noise.png);
-        opacity: 0.2;
+        opacity: 0;
         background-size: cover;
-        // width: 100%;
-        // height: 100%;
-        // position: absolute;
-        // z-index: 3;
-        // top: 0;
     }
 }
-// .page-enter-active,
-// .page-leave-active {
-//     transition-property: height, opacity;
-//     transition-timing-function: ease-in-out;
-//     transition-duration: 500ms;
-//     @apply overflow-hidden;
-// }
-// .page-enter,
-// .page-leave-to {
-//     opacity: 0;
-// }
+nav {
+    background-color: #e5e7eb; /* Light gray color equivalent to Tailwind's bg-gray-200 */
+    @apply flex-wrap;
+}
 </style>
