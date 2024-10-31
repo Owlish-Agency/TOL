@@ -50,6 +50,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 768px) {
+    body,
+    a,
+    li,
+    h2 {
+        font-size: 14pt;
+    }
+}
+@media (min-width: 769px) {
+    body,
+    a,
+    li,
+    h2 {
+        font-size: 16pt;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400&display=swap');
 .glow {
     text-shadow: 0px 0px 10px rgba(223, 217, 163, 0.78);
     &-shadow {
@@ -69,7 +86,7 @@ h2,
 a,
 li,
 body {
-    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    font-family: 'Asap', Arial, sans-serif; /* Use a clean, readable font */
     font-weight: normal;
 }
 </style>

@@ -205,6 +205,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400&display=swap');
 .hamburger-button {
     background-color: #e5e7eb; /* Light gray color equivalent to Tailwind's bg-gray-200 */ /* White background for hamburger button */ /* Dark text color */
 }
@@ -244,15 +245,15 @@ export default {
 }
 
 h2 {
-    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    font-family: 'Asap', Arial, sans-serif; /* Use a clean, readable font */
     font-weight: normal;
 }
 
 button {
-    font-family: Arial, sans-serif;
+    font-family: 'Asap', Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Asap', Arial, sans-serif;
 }
 </style>

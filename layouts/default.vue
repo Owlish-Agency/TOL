@@ -11,7 +11,6 @@
             class="flex flex-wrap justify-center items-center px-8 border-b border-muted-blue w-full z-1 min-max-h-header"
         >
             <NavigationToL
-                v-if="showNavigation"
                 :is-form-page="isFormPage"
                 @mobileNavClosed="removeShade"
                 @mobileNavOpen="addShade"
