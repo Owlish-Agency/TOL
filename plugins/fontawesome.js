@@ -6,9 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons/faPhoneAlt'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons/faChevronUp'
-import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle'
 
-library.add(faPhoneAlt, faEnvelope, faChevronUp, faTimes, faExclamationTriangle)
+library.add(
+    faPhoneAlt,
+    faEnvelope,
+    faChevronUp,
+    faTimes,
+    faBars,
+    faExclamationTriangle
+)
 
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)

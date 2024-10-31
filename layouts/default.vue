@@ -7,6 +7,12 @@
             'opacity-100': !transitioning,
         }"
     >
+        <NavigationToL
+            v-if="showNavigation"
+            :is-form-page="isFormPage"
+            @mobileNavClosed="removeShade"
+            @mobileNavOpen="addShade"
+        />
         <nav
             v-if="isFormPage"
             class="flex md:justify-center items-center px-8 border-b border-muted-blue w-full z-1 min-max-h-header"
@@ -66,6 +72,7 @@ import { mapState } from 'vuex'
 export default {
     name: 'Default',
     components: {
+        NavigationToL: () => import('~/components/global/NavigationToL'),
         Navigation: () => import('~/components/global/Navigation'),
         Particle: () => import('~/components/Particle'),
     },
