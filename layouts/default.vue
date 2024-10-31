@@ -18,7 +18,7 @@
             <a
                 href="https://hospicebr.org/"
                 target="_blank"
-                class="w-full mb-16 md:mb-0 md:w-40 lg:w-48 flex justify-center"
+                class="w-full mb-16 md:mb-0 md:w-40 lg:w-48 flex justify-center relative z-10"
             >
                 <img
                     src="//www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=1923"
