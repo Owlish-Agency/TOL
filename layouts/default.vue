@@ -17,18 +17,16 @@
             />
             <a
                 href="https://hospicebr.org/"
-                target="_blank"
-                class="w-full mb-16 md:mb-0 md:w-40 lg:w-48 flex justify-center relative z-10"
+                class="w-full mb-0 md:mb-0 md:w-48 lg:w-56 flex justify-center relative z-10"
             >
                 <img
                     src="//www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=1923"
                     alt="Hospice of Baton Rouge Logo"
                     srcset="
-                        //www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=600 600w,
                         //www.hospicebr.org/cdn/shop/files/THBR_Horizontal_Pantone_00f4dcf0-a42a-480f-a485-405e8097e347.png?v=1716578134&amp;width=900 900w
                     "
-                    sizes="(max-width: 768px) 150px, 200px"
-                    class="header__logo-image w-32 md:w-48 lg:w-56 h-auto"
+                    sizes="200px"
+                    class="header__logo-image md:w-48 lg:w-56 h-auto"
                 />
             </a>
         </nav>

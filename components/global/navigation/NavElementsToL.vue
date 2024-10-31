@@ -2,7 +2,6 @@
     <div class="flex flex-col items-center space-y-8">
         <a
             href="https://hospicebr.org/"
-            target="_blank"
             class="w-full mb-16 md:mb-0 md:w-40 lg:w-48"
         >
             <img
@@ -22,7 +21,6 @@
             >
                 <a
                     :href="link.slug"
-                    target="_blank"
                     class="text-muted-dark font-bold tracking-widest block text-base md:text-semi-s lg:text-base mt-1"
                     :class="{ 'glow mt-0': $route.name == link.id }"
                     >{{ link.label }}</a
@@ -55,7 +53,7 @@ export default {
     a,
     li,
     h2 {
-        font-size: 14pt;
+        font-size: 16pt;
     }
 }
 @media (min-width: 769px) {
@@ -63,7 +61,7 @@ export default {
     a,
     li,
     h2 {
-        font-size: 16pt;
+        font-size: 18pt;
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400&display=swap');
